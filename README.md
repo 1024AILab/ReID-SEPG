@@ -1,1 +1,1 @@
-aaa
+# Resource codes for SEPG-Net
