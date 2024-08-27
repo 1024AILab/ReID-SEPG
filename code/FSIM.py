@@ -32,7 +32,6 @@ class FSIM(nn.Module):
 
     def forward(self, x):
         b, c, H, W = x.shape
-        a = 0.35
         # fft
         mix = x
         mix_mag, mix_pha = self.FF(mix)
@@ -40,7 +39,7 @@ class FSIM(nn.Module):
         pha_only = constant * np.e ** (1j * mix_pha)
         # irfft
         x_out_main = torch.abs(torch.fft.irfft2(pha_only, s=(H, W), norm='backward')) + 1e-8
-        out1 = a * x_out_main + (1 - a) * mix
+        out1 = x_out_main + mix
         return out1
 
 
