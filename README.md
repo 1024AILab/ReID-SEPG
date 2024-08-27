@@ -12,3 +12,7 @@ A Simple yet effective architecture for VI-ReID. No need for fancy, complicated 
 ## Demo Picture
 
 <img src="2.png">
+
+## Installation
+
+Run `pip install -r requirements.txt` in the root directory of the project.
