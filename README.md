@@ -11,7 +11,7 @@ A Simple yet effective architecture for VI-ReID. No need for fancy, complicated 
 
 ## Demo Picture
 
-<img src="2.png">
+<img src="4.png">
 
 ## Installation
 
