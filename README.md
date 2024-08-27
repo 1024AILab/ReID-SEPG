@@ -23,5 +23,5 @@ Run `pip install -r requirements.txt` in the root directory of the project.
 
 * change the data_path in ```code/train_row.py``` (line 60 and 64)
 
-* ```python code/train_row.py --gpu 0 --dataset sysu```
+* ```python train_row.py --gpu 0 --dataset sysu``` (RegDB is similarly configured)
 
