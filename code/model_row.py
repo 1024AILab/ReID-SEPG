@@ -6,7 +6,7 @@ from resnet import resnet50, resnet18
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-
+from FSIM import FSIM
 
 class Normalize(nn.Module):
     def __init__(self, power=2):
@@ -155,9 +155,11 @@ class embed_net(nn.Module):
         self.l2norm = Normalize(2)
         self.avgpool = nn.AdaptiveAvgPool2d((self.part, 1))
         self.avgpool2 = nn.AdaptiveAvgPool2d((1, 1))
+        self.seg=FSIM()
 
     def forward(self, x1, x2, modal=0):
         if modal == 0:
+            x1=self.seg(x1) #光谱增强
             x = torch.cat((x1, x2), 0)
             x = self.base_resnet(x)
             # temp=self.avgpool2(x)
