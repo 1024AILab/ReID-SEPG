@@ -10,7 +10,7 @@ A Simple yet effective architecture for VI-ReID. No need for fancy, complicated 
 - [08/2024] **📣We released the code.**
 
 ## Demo Picture
-(a) baseline  (b)SEPG-Net
+(a) baseline                                            (b)SEPG-Net
 <img src="result.png">
 
 ## Installation
