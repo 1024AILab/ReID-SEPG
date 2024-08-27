@@ -9,4 +9,4 @@ A Simple yet effective architecture for VI-ReID. No need for fancy, complicated 
 
 ## Demo Picture
 
-<img src="demodata.png">
+<img src="2.png">
