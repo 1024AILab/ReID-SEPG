@@ -198,9 +198,9 @@ class embed_net(nn.Module):
 
 from thop import profile
 from torchstat import stat
-inputs1 = torch.randn(2, 3, 384, 192)
+inputs1 = torch.randn(2, 3, 288, 144)
 print(inputs1.shape)
-inputs2 = torch.randn(2, 3, 384, 192)
+inputs2 = torch.randn(2, 3, 288, 144)
 model=embed_net()
 
 flops, params = profile(model, inputs=(inputs1,inputs2))

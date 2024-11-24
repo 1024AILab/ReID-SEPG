@@ -44,7 +44,7 @@ class FSIM(nn.Module):
 
 
 if __name__ == '__main__':
-    input = torch.randn(56, 1, 384, 192)
+    input = torch.randn(56, 1, 288, 144)
     model = FSIM()
     output = model(input)
     print(output.shape)

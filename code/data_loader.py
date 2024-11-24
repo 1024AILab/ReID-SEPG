@@ -53,7 +53,7 @@ class RegDBData(data.Dataset):
         for i in range(len(color_img_file)):
    
             img = Image.open(data_dir+ color_img_file[i])
-            img = img.resize((192, 384), Image.ANTIALIAS)
+            img = img.resize((144, 288), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_color_image.append(pix_array)
         train_color_image = np.array(train_color_image) 
@@ -61,7 +61,7 @@ class RegDBData(data.Dataset):
         train_thermal_image = []
         for i in range(len(thermal_img_file)):
             img = Image.open(data_dir+ thermal_img_file[i])
-            img = img.resize((192, 384), Image.ANTIALIAS)
+            img = img.resize((144, 288), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_thermal_image.append(pix_array)
         train_thermal_image = np.array(train_thermal_image)
@@ -69,7 +69,7 @@ class RegDBData(data.Dataset):
         train_mask_image = []
         for i in range(len(mask_img_file)):
             img = Image.open(data_dir+ mask_img_file[i])
-            img = img.resize((192, 384), Image.ANTIALIAS)
+            img = img.resize((144, 288), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_mask_image.append(pix_array)
         train_mask_image = np.array(train_mask_image)
@@ -77,7 +77,7 @@ class RegDBData(data.Dataset):
         train_maskc_image = []
         for i in range(len(maskc_img_file)):
             img = Image.open(data_dir+ maskc_img_file[i])
-            img = img.resize((192, 384), Image.ANTIALIAS)
+            img = img.resize((144, 288), Image.ANTIALIAS)
             pix_array = np.array(img)
             train_maskc_image.append(pix_array)
         train_maskc_image = np.array(train_maskc_image)
